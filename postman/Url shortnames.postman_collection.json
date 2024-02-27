@@ -1,0 +1,46 @@
+{
+	"info": {
+		"_postman_id": "1f3022c0-74d9-473c-b086-b47724c37118",
+		"name": "Url shortnames",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "733641"
+	},
+	"item": [
+		{
+			"name": "Get url",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:3000/u/vKUCZ"
+			},
+			"response": []
+		},
+		{
+			"name": "Get top 100",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:3000/"
+			},
+			"response": []
+		},
+		{
+			"name": "Get Shortest Url",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"url\": \"https://developer.accuweather.com/\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:3000/"
+			},
+			"response": []
+		}
+	]
+}
