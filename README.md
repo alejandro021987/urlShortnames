@@ -45,28 +45,26 @@ $ npm run start:dev
 $ npm run start:prod
 ```
 
-## Test
-
+## Test API
+In folder /postman you can find the postman-collection.json 
+Endpoints
+#### POST http://localhost:3000/ 
+example body request: 
 ```bash
-# unit tests
-$ npm run test
-
-# e2e tests
-$ npm run test:e2e
-
-# test coverage
-$ npm run test:cov
+{
+    "url": "https://www.roadandtrack.com/photos/g44323558/2024-audi-rs7-performance-photos/"
+}
 ```
+#### GET http://localhost:3000/u/{{shortCode}}  
+this is the new url that redirect to the original webpage, you can test directly in the browser
+
+#### GET http://localhost:3000/top-100 
+Endpoint to get top 100 urls most frequently accessed
+
 
 ## Support
 
 Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
-
-## Stay in touch
-
-- Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
 
 ## License
 
