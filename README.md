@@ -33,7 +33,8 @@ $ npm install
 ```
 
 ## Running the app
-
+#### You need to have mongodb installed
+the default connection is: mongodb://localhost:27017
 ```bash
 # development
 $ npm run start
